@@ -1,0 +1,67 @@
+html, body{
+		width:100%;
+		height:100%;
+		}
+    
+	*{
+		margin:0px;
+		padding:0px;
+		}
+		
+	/*.device{
+		width:360px; 
+		height:640px; 
+		background-color:green;
+		}*/
+	.device{
+		width:100%;
+		height:100%;
+		background-color:red;
+		position:relative;
+		background-image:url("../img/back.jpg");
+		background-size:cover;
+		}
+	.logo{
+		height:auto;
+		position:absolute;
+		left:5%;
+		top:5%;
+		}
+	.price{
+		position:absolute;
+		right:5%;
+		top:5%;
+		}
+	.spinner{
+		position:absolute;
+		z-index:1;
+
+		}
+	.roulette{
+		position:absolute;
+		//background-color:gray;
+		}
+	
+	@media only screen and (min-device-width:320px){
+	.spinner,
+	.logo{
+		width:36%; //8rem
+		}
+	
+	.price{
+		width:150px;
+		}
+	
+	.roulette{
+		width:65%; 	//14rem;
+		margin-top:72%;
+		margin-left:18%;
+		}
+	.spinner{
+		margin-top:88%;
+		margin-left:32%;
+		}
+	.device{
+		background-color:blue;
+		}
+	}
